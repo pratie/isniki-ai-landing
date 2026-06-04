@@ -62,15 +62,15 @@ function App() {
       <header className="sticky-header">
         <div className="nav-wrapper">
           <a href="#" className="brand-link">
-            <img src="/app-icon.png" alt="Isniki AI logo" className="brand-icon" />
-            <span>Isniki AI</span>
+            <img src="/app-icon.png" alt="Sneakyguy AI logo" className="brand-icon" />
+            <span>Sneakyguy AI</span>
           </a>
           
           <nav className="nav-links">
             <li><a href="#features" className="nav-link">Features</a></li>
             <li><a href="#how-it-works" className="nav-link">How It Works</a></li>
             <li><a href="#download" className="nav-link">Pricing</a></li>
-            <li><a href="mailto:support@isniki.ai" className="nav-link">Support</a></li>
+            <li><a href="mailto:support@sneakyguy.ai" className="nav-link">Support</a></li>
           </nav>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
@@ -103,7 +103,7 @@ function App() {
             <a href="#features" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Features</a>
             <a href="#how-it-works" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>How It Works</a>
             <a href="#download" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
-            <a href="mailto:support@isniki.ai" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Support</a>
+            <a href="mailto:support@sneakyguy.ai" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Support</a>
             <a href="#download" className="mobile-nav-cta" onClick={() => setMobileMenuOpen(false)}>Get the App</a>
           </div>
         )}
@@ -130,7 +130,7 @@ function App() {
               
               <div className="download-actions-row">
                 <a href="#download" className="app-store-badge-link" aria-label="Download on the App Store">
-                  <img src="/download-black.svg" alt="Download Isniki AI on the App Store" className="app-store-badge-img" />
+                  <img src="/download-black.svg" alt="Download Sneakyguy AI on the App Store" className="app-store-badge-img" />
                 </a>
                 <span className="platform-notes">Android coming soon</span>
               </div>
@@ -153,7 +153,7 @@ function App() {
 
             <div className="hero-mockup-wrapper">
               <PhoneMockup>
-                <img src="/hero-phone.webp" className="phone-screen-img" alt="Isniki AI App showing photo transformation UI" />
+                <img src="/hero-phone.webp" className="phone-screen-img" alt="Sneakyguy AI App showing photo transformation UI" />
               </PhoneMockup>
             </div>
           </div>
@@ -339,11 +339,11 @@ function App() {
         <section id="download" className="cta-section">
           <div className="cta-wrapper">
             <h2 className="cta-title">Ready to try it?</h2>
-            <p className="cta-subtitle">Download Isniki AI and transform your first photo in under a minute.</p>
+            <p className="cta-subtitle">Download Sneakyguy AI and transform your first photo in under a minute.</p>
             
             <div className="cta-actions">
               <a href="#download" className="app-store-badge-link" aria-label="Download on the App Store">
-                <img src="/download-white.svg" alt="Download Isniki AI on the App Store" className="app-store-badge-img" />
+                <img src="/download-white.svg" alt="Download Sneakyguy AI on the App Store" className="app-store-badge-img" />
               </a>
               <span className="platform-notes" style={{ color: 'rgba(255,255,255,0.8)' }}>Android coming soon</span>
             </div>
@@ -361,8 +361,8 @@ function App() {
             {/* Logo/Info Col */}
             <div className="footer-brand-column">
               <a href="#" className="footer-logo-row">
-                <img src="/app-icon.png" alt="Isniki AI logo" className="brand-icon" />
-                <span>Isniki AI</span>
+                <img src="/app-icon.png" alt="Sneakyguy AI logo" className="brand-icon" />
+                <span>Sneakyguy AI</span>
               </a>
               <p className="footer-tagline">Transform any photo in seconds using advanced artificial intelligence.</p>
               
@@ -387,7 +387,7 @@ function App() {
                   </svg>
                 </a>
                 {/* Email Icon */}
-                <a href="mailto:support@isniki.ai" className="social-link-btn" aria-label="Email support">
+                <a href="mailto:support@sneakyguy.ai" className="social-link-btn" aria-label="Email support">
                   <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
@@ -402,7 +402,7 @@ function App() {
               <ul className="footer-links-list">
                 <li><a href="#" className="footer-link">Privacy Policy</a></li>
                 <li><a href="#" className="footer-link">Terms of Service</a></li>
-                <li><a href="mailto:support@isniki.ai" className="footer-link">Contact Us</a></li>
+                <li><a href="mailto:support@sneakyguy.ai" className="footer-link">Contact Us</a></li>
               </ul>
             </div>
 
@@ -420,7 +420,7 @@ function App() {
 
           {/* Bottom Row */}
           <div className="footer-bottom-row">
-            <p className="copyright-text">© 2026 Isniki AI. All rights reserved.</p>
+            <p className="copyright-text">© 2026 Sneakyguy AI. All rights reserved.</p>
             <div className="footer-bottom-links">
               <a href="#" className="footer-bottom-link">Privacy Policy</a>
               <a href="#" className="footer-bottom-link">Terms of Service</a>
