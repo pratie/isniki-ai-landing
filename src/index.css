@@ -4,17 +4,17 @@
   /* Font Families */
   --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   
-  /* Colors (Light Mode) */
-  --background: #ffffff;
-  --foreground: #09090b;
-  --primary: #18181b;
+  /* Smooth White Theme Colors */
+  --background: #f9fafb; /* Soft smooth off-white background */
+  --foreground: #09090b; /* Very dark neutral for premium typography */
+  --primary: #18181b; /* Neutral dark for primary elements and buttons */
   --primary-foreground: #fafafa;
-  --card: #ffffff;
+  --card: #ffffff; /* Pure white for containers to contrast with off-white bg */
   --card-foreground: #09090b;
-  --muted: #f4f4f5;
-  --muted-foreground: #71717a;
-  --border: #e4e4e7;
-  --input: #e4e4e7;
+  --muted: #f3f4f6; /* Soft light gray for subtle backgrounds */
+  --muted-foreground: #6b7280; /* Neutral gray for secondary copy */
+  --border: #e5e7eb; /* Very soft border line color */
+  --input: #e5e7eb;
   --ring: #18181b;
   
   /* Feature Colors */
@@ -27,22 +27,6 @@
   --transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* Colors (Dark Mode) */
-    --background: #09090b;
-    --foreground: #fafafa;
-    --primary: #fafafa;
-    --primary-foreground: #18181b;
-    --card: #18181b;
-    --card-foreground: #fafafa;
-    --muted: #27272a;
-    --muted-foreground: #a1a1aa;
-    --border: #27272a;
-    --input: rgba(255, 255, 255, 0.15);
-    --ring: #fafafa;
-  }
-}
 
 /* Base resets */
 * {
@@ -86,11 +70,7 @@ header.sticky-header {
   transition: var(--transition);
 }
 
-@media (prefers-color-scheme: dark) {
-  header.sticky-header {
-    background-color: rgba(9, 9, 11, 0.85);
-  }
-}
+
 
 .nav-wrapper {
   margin: 0 auto;
@@ -543,11 +523,7 @@ header.sticky-header {
   background-color: rgba(244, 244, 245, 0.5);
 }
 
-@media (prefers-color-scheme: dark) {
-  .social-proof-section {
-    background-color: rgba(39, 39, 42, 0.3);
-  }
-}
+
 
 .social-proof-wrapper {
   margin: 0 auto;
@@ -675,11 +651,7 @@ header.sticky-header {
   background-color: rgba(244, 244, 245, 0.5);
 }
 
-@media (prefers-color-scheme: dark) {
-  .features-section {
-    background-color: rgba(39, 39, 42, 0.3);
-  }
-}
+
 
 .features-wrapper {
   margin: 0 auto;
