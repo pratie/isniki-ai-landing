@@ -19,8 +19,8 @@
   
   /* Feature Colors */
   --star-color: #fbbf24;
-  --brand-blue: #0088ff;
-  --brand-blue-hover: #0077ee;
+  --brand-blue: #18181b; /* Premium dark neutral instead of blue */
+  --brand-blue-hover: #27272a;
   
   /* General Variables */
   --radius: 0.75rem;
