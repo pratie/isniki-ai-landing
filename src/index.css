@@ -1057,3 +1057,72 @@ footer.site-footer {
 .footer-bottom-link:hover {
   color: var(--foreground);
 }
+
+/* Legal Pages (Privacy & Terms) */
+.legal-page {
+  max-width: 45rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.legal-header {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.legal-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--foreground);
+}
+
+.legal-updated {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--muted-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.legal-subtitle {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--muted-foreground);
+  margin-top: 0.5rem;
+}
+
+.legal-content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--foreground);
+  margin: 2.5rem 0 1rem;
+}
+
+.legal-content h3 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--foreground);
+  margin: 1.5rem 0 0.75rem;
+}
+
+.legal-content p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--muted-foreground);
+  margin-bottom: 1.25rem;
+}
+
+.legal-content ul, .legal-content ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--muted-foreground);
+}
+
+.legal-content li {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
