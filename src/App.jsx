@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 // Reusable Image Comparison Slider Component
 function ImageCompare({ before, after, alt, beforeLabel = "Before", afterLabel = "After" }) {
@@ -124,7 +124,7 @@ function Header({ view, onNavigate, mobileMenuOpen, setMobileMenuOpen }) {
 }
 
 // Landing Page View Component
-function HomeView({ onNavigate }) {
+function HomeView() {
   const handleAnchorClick = (e, targetId) => {
     e.preventDefault();
     const el = document.getElementById(targetId);
@@ -579,13 +579,34 @@ function Footer({ onNavigate }) {
 }
 
 function App() {
-  const [view, setView] = useState('home');
+  const [view, setView] = useState(() => {
+    const path = window.location.pathname;
+    if (path === '/privacy') return 'privacy';
+    if (path === '/terms') return 'terms';
+    return 'home';
+  });
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      if (path === '/privacy') setView('privacy');
+      else if (path === '/terms') setView('terms');
+      else setView('home');
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
 
   const navigateTo = (newView) => {
     setView(newView);
     setMobileMenuOpen(false);
     window.scrollTo({ top: 0, behavior: 'instant' });
+    
+    const newPath = newView === 'home' ? '/' : `/${newView}`;
+    if (window.location.pathname !== newPath) {
+      window.history.pushState({}, '', newPath);
+    }
   };
 
   return (
@@ -599,7 +620,7 @@ function App() {
       />
 
       <main className="main-content">
-        {view === 'home' && <HomeView onNavigate={navigateTo} />}
+        {view === 'home' && <HomeView />}
         {view === 'privacy' && <PrivacyPolicy />}
         {view === 'terms' && <TermsOfService />}
       </main>
