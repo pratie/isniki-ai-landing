@@ -82,7 +82,7 @@ function Header({ view, onNavigate, mobileMenuOpen, setMobileMenuOpen }) {
           <li><a href="#features" onClick={(e) => handleAnchorClick(e, 'features')} className="nav-link">Features</a></li>
           <li><a href="#how-it-works" onClick={(e) => handleAnchorClick(e, 'how-it-works')} className="nav-link">How It Works</a></li>
           <li><a href="#download" onClick={(e) => handleAnchorClick(e, 'download')} className="nav-link">Pricing</a></li>
-          <li><a href="mailto:support@sneakyguy.ai" className="nav-link">Support</a></li>
+          <li><a href="mailto:sneakyguysaas@gmail.com" className="nav-link">Support</a></li>
         </nav>
 
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
@@ -115,7 +115,7 @@ function Header({ view, onNavigate, mobileMenuOpen, setMobileMenuOpen }) {
           <a href="#features" className="mobile-nav-link" onClick={(e) => handleAnchorClick(e, 'features')}>Features</a>
           <a href="#how-it-works" className="mobile-nav-link" onClick={(e) => handleAnchorClick(e, 'how-it-works')}>How It Works</a>
           <a href="#download" className="mobile-nav-link" onClick={(e) => handleAnchorClick(e, 'download')}>Pricing</a>
-          <a href="mailto:support@sneakyguy.ai" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Support</a>
+          <a href="mailto:sneakyguysaas@gmail.com" className="mobile-nav-link" onClick={() => setMobileMenuOpen(false)}>Support</a>
           <a href="#download" className="mobile-nav-cta" onClick={(e) => handleAnchorClick(e, 'download')}>Get the App</a>
         </div>
       )}
@@ -417,17 +417,17 @@ function PrivacyPolicy() {
         <p>We may share minimal data if required by legal authorities to comply with applicable laws, safety standards, or regulations.</p>
         
         <h2>4. Data Retention and Erasure</h2>
-        <p>We retain personal information as long as your account is active or needed to provide you with services. When information is no longer needed, we safely delete or anonymize it. You can request full deletion of your account and files at any time by contacting us at <strong>support@sneakyguy.ai</strong>.</p>
+        <p>We retain personal information as long as your account is active or needed to provide you with services. When information is no longer needed, we safely delete or anonymize it. You can request full deletion of your account and files at any time by contacting us at <strong>sneakyguysaas@gmail.com</strong>.</p>
         
         <h2>5. Your Choices & Privacy Rights</h2>
-        <p>Depending on your country or state (such as the GDPR in Europe or CCPA in California), you may hold rights to access, download, correct, or delete personal data. To exercise these rights, send a request to <strong>support@sneakyguy.ai</strong>.</p>
+        <p>Depending on your country or state (such as the GDPR in Europe or CCPA in California), you may hold rights to access, download, correct, or delete personal data. To exercise these rights, send a request to <strong>sneakyguysaas@gmail.com</strong>.</p>
         
         <h2>6. Updates to This Policy</h2>
         <p>We may modify this Privacy Policy from time to time to align with legal updates or new product features. If we make major edits, we will display an update notice inside the app. Continued use of our service after changes go live constitutes acceptance of the new terms.</p>
         
         <h2>7. Contact Us</h2>
         <p>If you have any questions about our privacy practices, please contact us at:</p>
-        <p><strong>Sneakyguy AI Support Team</strong><br/>Email: <strong>support@sneakyguy.ai</strong></p>
+        <p><strong>Sneakyguy AI Support Team</strong><br/>Email: <strong>sneakyguysaas@gmail.com</strong></p>
       </div>
     </article>
   );
@@ -479,7 +479,7 @@ function TermsOfService() {
         <p>These terms are governed by and construed in accordance with the laws of the State of California and the United States of America, without regard to conflict of law principles.</p>
         
         <h2>8. Contact Information</h2>
-        <p>For any legal inquiries, support requests, or questions regarding these terms, please contact us at <strong>support@sneakyguy.ai</strong>.</p>
+        <p>For any legal inquiries, support requests, or questions regarding these terms, please contact us at <strong>sneakyguysaas@gmail.com</strong>.</p>
       </div>
     </article>
   );
@@ -511,26 +511,9 @@ function Footer({ onNavigate }) {
             <p className="footer-tagline">Transform any photo in seconds using advanced artificial intelligence.</p>
             
             <div className="footer-social-row">
-              <a href="https://tiktok.com" target="_blank" rel="noreferrer" className="social-link-btn" aria-label="TikTok">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z" />
-                </svg>
-              </a>
-              <a href="https://x.com" target="_blank" rel="noreferrer" className="social-link-btn" aria-label="X">
+              <a href="https://x.com/prthpdev" target="_blank" rel="noreferrer" className="social-link-btn" aria-label="X">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-                </svg>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="social-link-btn" aria-label="Instagram">
-                <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01" />
-                </svg>
-              </a>
-              <a href="mailto:support@sneakyguy.ai" className="social-link-btn" aria-label="Email support">
-                <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" viewBox="0 0 24 24">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
                 </svg>
               </a>
             </div>
@@ -542,7 +525,7 @@ function Footer({ onNavigate }) {
             <ul className="footer-links-list">
               <li><a href="#privacy" className="footer-link" onClick={(e) => handleLinkClick(e, 'privacy')}>Privacy Policy</a></li>
               <li><a href="#terms" className="footer-link" onClick={(e) => handleLinkClick(e, 'terms')}>Terms of Service</a></li>
-              <li><a href="mailto:support@sneakyguy.ai" className="footer-link">Contact Us</a></li>
+              <li><a href="mailto:sneakyguysaas@gmail.com" className="footer-link">Contact Us</a></li>
             </ul>
           </div>
 
@@ -551,8 +534,8 @@ function Footer({ onNavigate }) {
             <h4 className="footer-column-title">Resources</h4>
             <ul className="footer-links-list">
               <li><a href="#" className="footer-link" onClick={handleLogoClick}>Home</a></li>
-              <li><a href="mailto:support@sneakyguy.ai" className="footer-link">Help Center</a></li>
-              <li><a href="mailto:support@sneakyguy.ai" className="footer-link">Support Desk</a></li>
+              <li><a href="mailto:sneakyguysaas@gmail.com" className="footer-link">Help Center</a></li>
+              <li><a href="mailto:sneakyguysaas@gmail.com" className="footer-link">Support Desk</a></li>
             </ul>
           </div>
           
