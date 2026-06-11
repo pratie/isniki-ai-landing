@@ -175,8 +175,8 @@ function HomeView() {
       <section className="hero-section">
         <div className="hero-grid">
           <div className="hero-content">
-            <h1 className="hero-title">Make your photos perfect.</h1>
-            <p className="hero-subtitle">Upload a photo. Describe the change. Get a result that looks real.</p>
+            <h1 className="hero-title">Photo editing, as easy as texting.</h1>
+            <p className="hero-subtitle">Just upload a picture and type what you want to change. Get stunning, photorealistic results instantly.</p>
             
             <div className="download-actions-row">
               <a href="#download" onClick={(e) => handleAnchorClick(e, 'download')} className="app-store-badge-link" aria-label="Download on the App Store">
