@@ -1126,3 +1126,53 @@ footer.site-footer {
   margin-bottom: 0.5rem;
 }
 
+/* Deck of Cards Slideshow */
+.card-deck-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.deck-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.6s ease-in-out;
+  border-radius: 20px;
+}
+
+/* Card States */
+.card-active {
+  z-index: 10;
+  transform: translateY(0) scale(1);
+  opacity: 1;
+}
+
+.card-next-1 {
+  z-index: 9;
+  transform: translateY(4%) scale(0.95);
+  opacity: 0.9;
+}
+
+.card-next-2 {
+  z-index: 8;
+  transform: translateY(8%) scale(0.9);
+  opacity: 0.7;
+}
+
+.card-hidden {
+  z-index: 1;
+  transform: translateY(12%) scale(0.85);
+  opacity: 0;
+}
+
+.card-exit {
+  z-index: 11;
+  transform: translateY(-100%) scale(0.9) rotate(-5deg);
+  opacity: 0;
+}
