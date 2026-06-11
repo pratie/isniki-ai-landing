@@ -123,6 +123,44 @@ function Header({ view, onNavigate, mobileMenuOpen, setMobileMenuOpen }) {
   );
 }
 
+// Deck of Cards Slideshow Component
+function CardDeckSlideshow({ images }) {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((current) => (current + 1) % images.length);
+    }, 2500);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <div className="card-deck-container">
+      {images.map((src, index) => {
+        // Calculate relative position (0 is active, 1 is next, etc.)
+        // Handle wrapping around the end of the array
+        let relativeIndex = (index - activeIndex + images.length) % images.length;
+        
+        let positionClass = 'card-hidden';
+        if (relativeIndex === 0) positionClass = 'card-active';
+        else if (relativeIndex === 1) positionClass = 'card-next-1';
+        else if (relativeIndex === 2) positionClass = 'card-next-2';
+        // The card that just swiped away
+        else if (relativeIndex === images.length - 1) positionClass = 'card-exit';
+
+        return (
+          <img
+            key={src}
+            src={src}
+            className={`deck-card ${positionClass}`}
+            alt="AI Transformation Variation"
+          />
+        );
+      })}
+    </div>
+  );
+}
+
 // Landing Page View Component
 function HomeView() {
   const handleAnchorClick = (e, targetId) => {
@@ -150,7 +188,18 @@ function HomeView() {
 
           <div className="hero-mockup-wrapper">
             <PhoneMockup>
-              <img src="/hero-phone.webp" className="phone-screen-img" alt="Sneakyguy AI App showing photo transformation UI" />
+              <CardDeckSlideshow 
+                images={[
+                  "/card-1.jpg",
+                  "/card-2.png",
+                  "/card-3.png",
+                  "/card-4.png",
+                  "/card-5.png",
+                  "/card-6.png",
+                  "/card-7.png",
+                  "/card-8.png"
+                ]} 
+              />
             </PhoneMockup>
           </div>
         </div>
