@@ -354,7 +354,7 @@ function HomeView() {
             <span className="platform-notes" style={{ color: 'rgba(255,255,255,0.8)' }}>Android coming soon</span>
           </div>
           
-          <p className="cta-notes">Free to start. No account required.</p>
+          <p className="cta-notes">No account required.</p>
         </div>
       </section>
     </>
