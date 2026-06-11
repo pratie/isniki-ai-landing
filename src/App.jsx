@@ -137,16 +137,6 @@ function HomeView() {
       <section className="hero-section">
         <div className="hero-grid">
           <div className="hero-content">
-            <div className="laurel-wreath-wrapper">
-              <div className="app-store-laurel-mask" aria-hidden="true"></div>
-              <div className="laurel-text-container">
-                <svg viewBox="0 0 24 24" fill="currentColor" className="laurel-apple-icon" aria-hidden="true">
-                  <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"></path>
-                </svg>
-                <p className="laurel-text">Top 100 on the App Store</p>
-              </div>
-            </div>
-
             <h1 className="hero-title">Make your photos perfect.</h1>
             <p className="hero-subtitle">Upload a photo. Describe the change. Get a result that looks real.</p>
             
@@ -156,21 +146,6 @@ function HomeView() {
               </a>
               <span className="platform-notes">Android coming soon</span>
             </div>
-
-            <div className="hero-trust-bar">
-              <div className="rating-stars" aria-hidden="true">
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="rating-star-icon">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                  </svg>
-                ))}
-              </div>
-              <span className="trust-text">4.9 on the App Store</span>
-              <span className="trust-divider" aria-hidden="true"></span>
-              <span className="trust-text">3M+ photos edited</span>
-              <span className="trust-divider" aria-hidden="true"></span>
-              <span className="trust-text">500K+ users</span>
-            </div>
           </div>
 
           <div className="hero-mockup-wrapper">
@@ -178,46 +153,6 @@ function HomeView() {
               <img src="/hero-phone.webp" className="phone-screen-img" alt="Sneakyguy AI App showing photo transformation UI" />
             </PhoneMockup>
           </div>
-        </div>
-      </section>
-
-      {/* Social Proof Trust Banner */}
-      <section className="social-proof-section">
-        <div className="social-proof-wrapper">
-          <ul className="social-proof-list">
-            <li className="proof-item">
-              <div className="rating-stars" aria-hidden="true" style={{ marginRight: '0.25rem' }}>
-                {[...Array(5)].map((_, i) => (
-                  <svg key={i} viewBox="0 0 20 20" fill="currentColor" className="rating-star-icon" style={{ width: '0.875rem', height: '0.875rem' }}>
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
-                  </svg>
-                ))}
-              </div>
-              <span className="proof-item-text">4.9</span>
-              <span className="proof-item-muted">App Store rating</span>
-            </li>
-            <li className="proof-item">
-              <svg viewBox="0 0 24 24" fill="currentColor" className="proof-item-icon" aria-hidden="true">
-                <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"></path>
-              </svg>
-              <span className="proof-item-text">Featured</span>
-              <span className="proof-item-muted">by Apple</span>
-            </li>
-            <li className="proof-item">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" className="proof-item-icon" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
-              </svg>
-              <span className="proof-item-text">3M+</span>
-              <span className="proof-item-muted">photos edited</span>
-            </li>
-            <li className="proof-item">
-              <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2" className="proof-item-icon" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-              </svg>
-              <span className="proof-item-text">500K+</span>
-              <span className="proof-item-muted">users</span>
-            </li>
-          </ul>
         </div>
       </section>
 
